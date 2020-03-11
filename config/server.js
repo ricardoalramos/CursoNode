@@ -10,6 +10,7 @@ app.set('views','./app/views');
 
 
 //midleware - USE
+app.use(express.static('./app/public'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressValidator());
 
